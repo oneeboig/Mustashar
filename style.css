@@ -122,6 +122,9 @@ body{
 .content_text h1{
     font-size: 22px;
 }
+.content_text p{
+    margin-top: -5px;
+}
 .content_image{
     display: flex;
     flex-basis: 40%;
