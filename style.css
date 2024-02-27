@@ -3,7 +3,10 @@ body{
     margin: 0px;
 }
 .laptop{
-    padding: 0px 80px;
+    padding: 20px 80px;
+}
+h2{
+    font-size: 40px;
 }
 /*************Navbar start*****************/
 .navbar{
@@ -145,9 +148,6 @@ body{
     border-radius: 5px;
     border: 1px solid #eee;
 }
-.text h2{
-    font-size: 40px;
-}
 .text p{
     margin-top: -7px;
     font-size: 22px;
@@ -286,7 +286,7 @@ hr {
 
 .join_section{
     display: flex;
-    margin: 50px 0px;
+    
 
 }
 .join_content{
@@ -294,9 +294,7 @@ hr {
     flex-basis: 50%;
     flex-direction: column;
 }
-.join_content h2{
-    font-size: 40px;
-}
+
 .card{
     display: flex;
     justify-content: center;
@@ -339,9 +337,6 @@ hr {
     flex-direction: column;
     background-color: #f6f6f6;
 }
-.set_section h2{
-    font-size: 40px;
-}
 .set_content{
     display: flex;
 }
@@ -352,4 +347,57 @@ hr {
     flex-direction: column;
     
 }
+.set_inner{
+    display: flex;
+    justify-content: start;
+    
+}
+.set_icon{
+    display: flex;
+    flex-basis: 6%;
+}
+.set_text{
+    display: flex;
+    flex-basis: 94%;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.set_text p{
+    margin-top: -10px;
+}
+.icon_set{
+    margin-top: 23px;   
+}
+
 /*************After-Join section end*****************/
+
+/*************Format section start*****************/
+.format_content{
+    display: flex;
+}
+.sec_1{
+    display: flex;
+    flex-basis: 30%;
+}
+.sec_2{
+    display: flex;
+    flex-basis: 70%;
+}
+.f_card{
+    display: flex;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+.format_icon{
+    font-size: 40px;
+    background-color: #ccc;
+}
+.fc_image,
+.fc_text{
+    display: flex;
+    flex-basis: 50%;
+}
+
+
+/*************Format section end*****************/
+
