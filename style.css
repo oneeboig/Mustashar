@@ -61,7 +61,7 @@ body{
 
 .header{
     display: flex;
-    background-color: blue;
+    
     
 }
 .content{
@@ -156,4 +156,19 @@ hr {
 .date_end h4{
     color: #5e5e5e;
     font-weight: 100;
+}
+.m_price{
+    display: flex;
+    flex-direction: column;
+}
+.price_box{
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #bbb;
+    padding: 20px 30px;
 }
