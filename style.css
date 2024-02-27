@@ -3,12 +3,12 @@ body{
     margin: 0px;
 }
 .laptop{
-    padding: 0px 40px;
+    padding: 0px 80px;
 }
 /*************Navbar start*****************/
 .navbar{
     display: flex;
-    background-color: blue;
+    background-color: rgb(14, 87, 240);
     color: white;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -46,10 +46,11 @@ body{
 .nav_icon{
     display: flex;
     flex-basis: 30%;
+    justify-content: center;
 }
 
 .nav_icon p{
-    font-size: 18px;
+    font-size: 22px;
     color: #fff;
 }
 .nav_icon p:hover{
@@ -61,9 +62,12 @@ body{
 
 .header{
     display: flex;
-    
-    
+    background: linear-gradient(rgba(14, 87, 240, 70%), rgba(14, 87, 240, 70%)), url('images/header_background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
 }
+
 .content{
     display: flex;
     flex-basis: 60%;
@@ -72,10 +76,12 @@ body{
 .content h1{
     margin-top: 50px;
     color: #ffffff;
-    letter-spacing: 4px
+    letter-spacing: 4px;
+    font-size: 40px;
 }
 .content p{
     color: #fff;
+    font-size: 25px;
 }
 .content a{
     width: 75px;
@@ -93,16 +99,74 @@ body{
 
 /*************header end*****************/
 
+/*************Navbar 2 start*****************/
+.nav_second{
+    display: flex;
+    background-color: #eee;
+    padding: 20px 0px;
+}
+.nav2_list{
+    display: flex;
+    flex-basis: 60%;
+}
+.nav2_list ul{
+    list-style-type: none;
+}
+.nav2_list li{
+     float: left;
+}
+.nav2_list i{
+    color: #000;
+}
+.nav2_list a{
+    text-decoration: none;
+    color: #000;
+    padding: 20px 70px;
+    border-right: 1px solid  #bbb;
+    font-size: 20px;
+}
+/*************Navbar 2 end*****************/
+/*************About section start*****************/
+.about{
+    display: flex;
+}
+.content_about{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #f6f6f6;
+    color: #000;
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+.text h2{
+    font-size: 40px;
+}
+.text p{
+    margin-top: -7px;
+    font-size: 22px;
+}
+.modal_space{
+    display: flex;
+    flex-basis: 50%;
+}
 /*************Modal start*****************/
 .modal{
     display: flex;
-    width: 30%;
+    width: 25%;
     flex-direction: column;
     position: absolute;
-    top: 50%;
-    right: 5%;
+    top: 60%;
+    right: 10%;
     background-color: #fff;
     transform: translateY(-50%);
+    border: 0.5px solid #ccc;
 }
 .sale{
     background-color: yellow;
@@ -172,3 +236,120 @@ hr {
     border: 1px solid #bbb;
     padding: 20px 30px;
 }
+.box:hover{
+    border: 1px solid blue;
+}
+.m_form{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+.form_name{
+    display: flex;
+    justify-content: space-between;
+}
+.form_name input{
+    padding: 5px 10px;
+    width: calc(49% - 20px);
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    outline: none;
+}
+.form_email{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.form_email input{
+    padding: 5px 10px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    outline: none;
+}
+.form_email button{
+    margin-top: 25px;
+    padding: 15px 0px;
+    background-color: yellow;
+    border: 1px solid  yellow;
+    border: 0px;
+    margin-bottom: 20px;
+}
+.form_email button:hover{
+    border: 1px solid  black;
+}
+/*************Modal end*****************/
+
+
+/*************Join section start*****************/
+
+.join_section{
+    display: flex;
+    margin: 50px 0px;
+
+}
+.join_content{
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+}
+.join_content h2{
+    font-size: 40px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-top: 35px;
+    border-radius: 5px;
+}
+.card_sec_1{
+    display: flex;
+    flex-basis: 40%;
+    border-right: 1px solid #ccc;
+    justify-content: center;
+}
+.card_sec_2{
+    display: flex;
+    flex-basis: 60%;
+    justify-content: center;
+    padding: 5px 20px;
+}
+.join_image{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.image_j{
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-top: 140px;
+    
+}
+/*************Join section end*****************/
+
+/*************After-Join section start*****************/
+.set_section{
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+}
+.set_section h2{
+    font-size: 40px;
+}
+.set_content{
+    display: flex;
+}
+.row_1,
+.row_2{
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    
+}
+/*************After-Join section end*****************/
