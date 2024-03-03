@@ -273,7 +273,6 @@ hr {
     padding: 15px 0px;
     background-color: yellow;
     border: 1px solid  yellow;
-    border: 0px;
     margin-bottom: 20px;
 }
 .form_email button:hover{
@@ -329,6 +328,11 @@ hr {
     margin-top: 140px;
     
 }
+.join_icon{
+    align-self: center;
+    margin-right: 20px;
+    font-size: 30px;
+}
 /*************Join section end*****************/
 
 /*************After-Join section start*****************/
@@ -378,6 +382,7 @@ hr {
 .sec_1{
     display: flex;
     flex-basis: 30%;
+    flex-direction: column;
 }
 .sec_2{
     display: flex;
@@ -385,19 +390,213 @@ hr {
 }
 .f_card{
     display: flex;
-    border: 1px solid #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 10px 20px;
+    margin-top: 40px;
 }
 .format_icon{
     font-size: 40px;
-    background-color: #ccc;
+    background-color: #e6e6e6;
+    align-self: center;
+    padding: 25px 25px;
+    border-radius: 50%;
+    margin-left: 15px;
 }
-.fc_image,
+.fc_image{
+    display: flex;
+    flex-basis: 30%;
+}
 .fc_text{
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 70%;
 }
+.agenda_box{
+    display: flex;
+    margin: 40px 115px 0px 120px;
+    flex-direction: column;
+}
+.box_header{
+    background-color: #ddd;
+    display: flex;
+}
+.box_header img{
+    width: 30px;
+    height: 35px;
+    margin: 11px;
+}
+.box_body{
+    background-color: #f6f6f6;
+    display: flex;
+}
+.bb_content ul{
 
-
+    list-style-type: none;
+}
+.bb_content li{
+    margin: 40px 85px 40px 0px;
+}
+.bb_content{
+    flex-basis: 85%;
+}
+.bb_style{
+    flex-basis: 15%;
+}
+.vertical-line {
+    width: 1px;
+    height: 90%;
+    background-color: #ccc;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 0px 0px 50px;
+  }
+  
+  .point {
+    width: 105px;
+    height: 20px;
+    background-color: #ffda40;
+    border-radius: 9px;
+    position: absolute;
+    left: -8px;
+    padding: 5px 10px;
+  }
+  
+  .point:nth-child(1) {
+    top: 12%;
+  }
+  
+  .point:nth-child(2) {
+    top: 45%;
+  }
+  
+  .point:nth-child(3) {
+    bottom: 13%;
+  }
 /*************Format section end*****************/
+/*************Course review section start*****************/
+.course{
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+}
+.course_sec_1,
+.course_sec_2{
+    display: flex;
+}
+.course_card{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin:30px 30px 0px 0px;
+    
+}
+.cc_header{
+    display: flex;
+    padding: 0px 20px;
+}
+.cc_header i{
+    align-self: center;
+    margin: 10px;
+    font-size: 25px;
+    padding: 19px;
+    background-color: #ddeaff;
+    border-radius: 50%;
+}
+.cc_header h4{
+    font-size: 25px;
+}
+.cc_rating{
+    display: flex;
+    margin-left: 25px;
+    
+}
+.cc_rating i{
+    color: yellow;
+    font-size: 20px;
+    margin-left: 4px;
 
+}
+.cc_body{
+    padding: 0px 30px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  .pagination a:hover{
+  background-color:rgb(47, 105, 230);
+  color:#fff;
+  }
+  .pagination a.active{
+    background-color:rgb(47, 105, 230);
+  color:#fff;
+  }
+  .banner{
+    display: flex;
+    margin-top: 80px;
+  }
+  .banner_image{
+    display: flex;
+    flex-basis: 20%;
+    background: linear-gradient(rgba(14, 87, 240, 70%), rgba(14, 87, 240, 70%)), url('images/banner.jpeg');
+    background-repeat: no-repeat;
+  }
+  .banner_image h2{
+    margin-left: 55px;
+    color: #fff;
+    display: flex;
+    align-self: center;
+  }
+  .banner_body{
+    background-color: rgb(47, 105, 230);
+    flex-basis: 60%;
+    padding: 20px 60px 50px 20px;
+  }
+  .banner_body h4{
+    color: #aaa;
+  }
+  .banner_body p{
+    color: #fff;
+  }
+  .banner_footer{
+    display: flex;
+    flex-basis: 20%;
+    background-color: rgb(47, 105, 230);
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .banner_footer h4{
+    color: #aaa;
+    font-size: 25px;
+  }
+  .banner_footer p{
+    margin: 0px 0px;
+    font-size: 30px;
+    color: red;
+  }
+  .banner_footer button{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 15px 0px;
+    background-color: yellow;
+    border: 1px solid  yellow;
+    border-radius: 5px;
+  }
+  .banner_footer button:hover{
+    border: 1px solid  black;
+  }
+  
+/*************Course review section end*****************/
