@@ -3,7 +3,7 @@ body{
     margin: 0px;
 }
 .laptop{
-    padding: 20px 80px;
+    padding: 40px 80px;
 }
 h2{
     font-size: 40px;
@@ -71,22 +71,22 @@ h2{
     background-position: center center; 
 }
 
-.content{
+.content_header{
     display: flex;
     flex-basis: 60%;
     flex-direction: column;
 }
-.content h1{
+.content_header h1{
     margin-top: 50px;
     color: #ffffff;
     letter-spacing: 4px;
     font-size: 40px;
 }
-.content p{
+.content_header p{
     color: #fff;
     font-size: 25px;
 }
-.content a{
+.content_header a{
     width: 75px;
     text-decoration: none;
     color: #000;
@@ -494,7 +494,7 @@ hr {
 }
 .cc_header{
     display: flex;
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
 .cc_header i{
     align-self: center;
@@ -519,7 +519,7 @@ hr {
 
 }
 .cc_body{
-    padding: 0px 30px;
+    padding: 0px 40px;
 }
 .pagination {
     display: flex;
@@ -565,6 +565,9 @@ hr {
     flex-basis: 60%;
     padding: 20px 60px 50px 20px;
   }
+  .banner_body li{
+    color: #aaa
+  }
   .banner_body h4{
     color: #aaa;
   }
@@ -600,3 +603,169 @@ hr {
   }
   
 /*************Course review section end*****************/
+
+/*************Program Schedule section start*****************/
+.collapsible {
+    background-color: #eee;
+    border-radius: 5px;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 20px;
+  }
+  
+  
+  
+  .collapsible:after {
+    content: '\02C3';
+    color: #3b3bff;
+    font-weight: bolder;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\02C5";
+  }
+  
+  .content {
+    padding: 0px 40px 0px 180px;
+    max-height: 0;
+    border: 1px solid #eee;
+    border-top: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #fff;
+  }
+/*************Program Schedule section end*****************/
+
+/*************Faculty section start*****************/
+
+.faculty{
+    background-color: #f6f6f6;
+}
+.f_content{
+    display: flex;
+}
+.f_list_1,
+.f_list_2{
+    flex-basis: 50%;
+    flex-direction: column;
+}
+.faculty_card{
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    border: none;
+    margin: 30px 30px 30px 0px;
+}
+.faculty_card_image{
+    flex-basis: 25%;
+}
+.faculty_card_image img{
+    width: 100%;
+    height: 100%;
+}
+.faculty_card_content{
+    flex-basis: 75%;
+    padding-left: 40px;
+}
+.faculty_card_content h4{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.faculty_card_content p{
+    color: #aaa;
+    font-size: 17px;
+}
+.faculty_card_content h5{
+    color: #fff;
+    background-color: #3b3bff;
+    padding: 5px 10px;
+    width: 80px;
+    border-radius: 5px;
+
+}
+
+/*************Faculty section end*****************/
+
+/*************FAQs section start*****************/
+.FAQs_collapsible {
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    color: #000;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  
+  
+  .FAQs_collapsible:after {
+    content: '\02C3';
+    color: #3b3bff;
+    font-weight: bolder;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\02C5";
+  }
+  
+  
+
+/*************FAQs section end*****************/
+/*************Main banner section start*****************/
+.main_banner{
+    background-color: rgb(47, 105, 230);
+}
+.mb_content {
+    display: flex;
+}
+.main_banner_head{
+    background-color: rgb(47, 105, 230);
+    color: #fff;
+}
+/*************Main banner section end*****************/
+
+
+/*************Footer section start*****************/
+.footer{
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+}
+.footer_content{
+    display: flex;
+}
+.footer_content p{
+    color: #bbb;
+}
+.footer_sec_1{
+    flex-basis: 33%;
+}
+.footer_sec_2{
+    flex-basis: 33%;
+}
+.footer_sec_3{
+    flex-basis: 34%;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: #bbb;
+    font-size: 18px;
+}
