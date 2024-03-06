@@ -1174,7 +1174,9 @@ hr {
         flex-direction: column;
     }
     
-    
+    .content_header a {
+        width: 100px;
+    }
     
     
 }
