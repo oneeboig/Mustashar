@@ -1241,6 +1241,10 @@ hr {
     .point:nth-child(3) {
         bottom: 23%;
     }
+    .faculty_card_content h5 {
+        width: 100px;
+    
+    }
     
     
 }
