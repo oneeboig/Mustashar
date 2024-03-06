@@ -14,9 +14,10 @@
 <body>
     <!-- Navbar start-->
     <div class="navbar laptop">
-        <div class="nav_menu">
+        <div class="nav_menu" id="myTopnav">
+            <i href="javascript:void(0);" class="fa-solid fa-bars icon_nav" onclick="myFunction()"></i>
             <div class="button_menu"><a href="#">Button</a></div>
-            <ul class="nav_list">
+            <ul class="nav_list" >   
                 <li><a href="#">menu1</a></li>
                 <li><a href="#">menu1</a></li>
                 <li><a href="#">menu1</a></li>
@@ -43,24 +44,89 @@
     <!-- Header end-->
     <!-- Navbar 2 start-->
     <div class="nav_second">
-        <div class="nav2_list">
-            <div class="nav2_l1">
-                <ul>
-                    <li><a href="#"><i class="fa-regular fa-address-card"></i> ABOUT</a></li>
-                    <li><a href="#"><i class="fa-solid fa-users-rectangle"></i> menu1</a></li>
-                </ul>
-            </div>
-            <div class="nav2_l2">
-                <ul>
-                    <li><a href="#"><i class="fa-solid fa-people-group"></i> FACULTY</a></li>
-                    <li><a href="#"><i class="fa-solid fa-clipboard-question"></i> FAQS</a></li>
-                </ul>
-            </div>
+        <div class="nav2_list" id="myTopnav2">
+            <ul> 
+                <i class="fa-solid fa-bars nav2_icon" onclick="myFunction2()"></i>
+                <li><a href="#"><i class="fa-regular fa-address-card"></i> ABOUT</a>
+                </li>
+
+                <li><a href="#"><i class="fa-solid fa-users-rectangle"></i> menu1</a>
+                </li>
+
+                <li><a href="#"><i class="fa-solid fa-people-group"></i> FACULTY</a>
+                </li>
+
+                <li><a href="#"><i class="fa-solid fa-clipboard-question"></i> FAQS</a></li>
+            </ul>
         </div>
         <div class="modal_space"></div>
 
     </div>
     <!-- Navbar 2 end-->
+
+    <!-- Modal start-->
+    <div class="modal_section laptop">
+        <div class="modal">
+            <div class="sale">
+                <p>Lorem ipsum dolor sit</p>
+            </div>
+            <div class="m_content">
+                <div class="content_text">
+                    <h1>CaseMaster- Building <br>Advanced </h1>
+                    <p>Lorem ipsum dolor sit amet,<br>consectetur </p>
+                </div>
+                <div class="content_image">
+                    <img src="images/image1.png" alt="image1">
+                </div>
+            </div>
+            <hr>
+            <div class="m_date">
+                <div class="date_start">
+                    <h4>DATE START FROM</h4>
+                    <p><b>15-20 SEP 2024</b> </p>
+                    <p><b>15-20 SEP 2024</b> </p>
+                </div>
+                <div class="date_end">
+                    <h4>DATE END</h4>
+                    <p><b>15-20 SEP 2024</b> </p>
+                    <p><b>15-20 SEP 2024</b> </p>
+                </div>
+            </div>
+            <div class="m_price">
+                <div class="date_start">
+                    <h4>PRICE</h4>
+                </div>
+                <div class="price_box">
+                    <div class="box">
+                        <span>$399</span>
+                        <i>/monthly</i>
+                    </div>
+                    <div class="box">
+                        <span>$399</span>
+                        <i>/monthly</i>
+                    </div>
+                    <div class="box">
+                        <span>$399</span>
+                        <i>/monthly</i>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="m_form">
+                <div class="form_name">
+                    <input type="text" placeholder="First name" />
+                    <input type="text" placeholder="Last name" />
+                </div>
+                <div class="form_email">
+                    <input type="email" placeholder="Email address" />
+                    <button>Enroll</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal end-->
     <!-- About section start-->
     <div class="about laptop" id="about">
         <div class="content_about">
@@ -76,72 +142,13 @@
         <div class="free-space"></div>
 
     </div>
-    <!-- Modal end-->
-    <!-- Modal start-->
-    <div class="modal">
-        <div class="sale">
-            <p>Lorem ipsum dolor sit</p>
-        </div>
-        <div class="m_content">
-            <div class="content_text">
-                <h1>CaseMaster- Building <br>Advanced </h1>
-                <p>Lorem ipsum dolor sit amet,<br>consectetur </p>
-            </div>
-            <div class="content_image">
-                <img src="images/image1.png" alt="image1">
-            </div>
-        </div>
-        <hr>
-        <div class="m_date">
-            <div class="date_start">
-                <h4>DATE START FROM</h4>
-                <p><b>15-20 SEP 2024</b> </p>
-                <p><b>15-20 SEP 2024</b> </p>
-            </div>
-            <div class="date_end">
-                <h4>DATE END</h4>
-                <p><b>15-20 SEP 2024</b> </p>
-                <p><b>15-20 SEP 2024</b> </p>
-            </div>
-        </div>
-        <div class="m_price">
-            <div class="date_start">
-                <h4>PRICE</h4>
-            </div>
-            <div class="price_box">
-                <div class="box">
-                    <span>$399</span>
-                    <i>/monthly</i>
-                </div>
-                <div class="box">
-                    <span>$399</span>
-                    <i>/monthly</i>
-                </div>
-                <div class="box">
-                    <span>$399</span>
-                    <i>/monthly</i>
-                </div>
-            </div>
-
-        </div>
-        <hr>
-        <div class="m_form">
-            <div class="form_name">
-                <input type="text" placeholder="First name" />
-                <input type="text" placeholder="Last name" />
-            </div>
-            <div class="form_email">
-                <input type="email" placeholder="Email address" />
-                <button>Enroll</button>
-            </div>
-        </div>
-    </div>
-    <!-- Modal end-->
+    <!-- About section end-->
 
     <!-- Join section start-->
+    <h2 class="laptop">Who should join us?</h2>
     <div class="join_section laptop">
+        
         <div class="join_content">
-            <h2>Who should join us?</h2>
             <div class="card">
                 <div class="card_sec_1">
                     <i class="fa-regular join_icon fa-circle-user"></i>
@@ -196,7 +203,7 @@
                     </div>
                     <div class="set_text">
                         <h4>Expertise in the industry</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Vestibulum sit amet quam rhoncus.</p>
+                        <p>1 Lorem ipsum dolor sit amet consectetur adipiscing elit Vestibulum sit amet quam rhoncus.</p>
                     </div>
                 </div>
                 <div class="set_inner">
@@ -205,7 +212,7 @@
                     </div>
                     <div class="set_text">
                         <h4>Expertise in the industry</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Vestibulum sit amet quam rhoncus.</p>
+                        <p>2 Lorem ipsum dolor sit amet consectetur adipiscing elit Vestibulum sit amet quam rhoncus.</p>
                     </div>
                 </div>
             </div>
@@ -216,7 +223,7 @@
                     </div>
                     <div class="set_text">
                         <h4>Expertise in the industry</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Vestibulum sit amet quam rhoncus.</p>
+                        <p>3 Lorem ipsum dolor sit amet consectetur adipiscing elit Vestibulum sit amet quam rhoncus.</p>
                     </div>
                 </div>
                 <div class="set_inner">
@@ -225,7 +232,7 @@
                     </div>
                     <div class="set_text">
                         <h4>Expertise in the industry</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Vestibulum sit amet quam rhoncus.</p>
+                        <p>4 Lorem ipsum dolor sit amet consectetur adipiscing elit Vestibulum sit amet quam rhoncus.</p>
                     </div>
                 </div>
             </div>
@@ -271,9 +278,9 @@
                     <div class="box_body">
                         <div class="bb_style">
                             <div class="vertical-line">
-                                <div class="point">7:00pm-7:30pm</div>
-                                <div class="point">7:30pm-8:00pm</div>
-                                <div class="point">8:00m-8:30pm</div>
+                                <div class="point"></div>
+                                <div class="point"></div>
+                                <div class="point"></div>
                             </div>
                         </div>
                         <div class="bb_content">
@@ -768,7 +775,7 @@
             </div>
         </div>
         <hr>
-        <div class="copyright">
+        <div class="copyright laptop">
             © 2024 Mustashar Advisor. All Rights Reserved | Design by Muhammad Oneeb Ishfaq
         </div>
     </div>
@@ -777,7 +784,7 @@
 
 
 
-    <!------------------Javascript for  collapsible--------------------->
+    <!------------------Javascript code--------------------->
 
     <script>
         var coll = document.getElementsByClassName("collapsible");
@@ -808,6 +815,22 @@
                     content.style.maxHeight = content.scrollHeight + "px";
                 }
             });
+        }
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "nav_menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav_menu";
+            }
+        }
+        function myFunction2() {
+            var x = document.getElementById("myTopnav2");
+            if (x.className === "nav2_list") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav2_list";
+            }
         }
     </script>
 </body>
